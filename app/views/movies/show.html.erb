@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="movie">
+    <h3><%= @movie.title %></h3>
+    <div>Rating: <%= @movie.rating %></div>
+    <div>Profit: <%= total_gross(@movie) %></div>
+    <p><%= @movie.description %></p>
+    <div>Year of release: <%= release_date(@movie) %></div>
+  </div>
+</div>

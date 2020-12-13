@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>RailsMovieReview</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="Movie review app">
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,6 +13,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header>Navigation</header>
+      <main>
+        <%= yield %>
+      </main>
+    <footer>Footer</footer>
   </body>
 </html>
