@@ -6,6 +6,6 @@
     <p><%= @movie.description %></p>
     <div>Year of release: <%= release_date(@movie) %></div>
 
-    <%= link_to 'Edit movie', edit_movie_path %>
+    <%= link_to 'Edit movie', edit_movie_path(@movie) %>
   </div>
 </div>
