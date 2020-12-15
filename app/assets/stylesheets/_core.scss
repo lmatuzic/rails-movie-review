@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 100%;
+}
+
+.movies {
+  &.new, &.edit {
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;

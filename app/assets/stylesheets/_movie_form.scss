@@ -1,0 +1,23 @@
+.movie-form {
+  width: 50%;
+  @media (max-width: 576px) { 
+    width: 100%;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 5rem;
+    padding: 5px;
+  }
+}
