@@ -1,3 +1,10 @@
 <div class="container"> 
-  <%= @movie.title %>
+  <%= simple_form_for @movie do |f| %>
+    <%= f.input :title %>
+    <%= f.input :rating %>
+    <%= f.input :total_gross %>
+    <%= f.input :description, as: :text %>
+    <%= f.input :released_on, as: :date %>
+    <%= f.button :submit %>
+  <% end %>
 </div>
