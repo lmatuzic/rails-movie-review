@@ -2,7 +2,7 @@
   <div class="movies">
     <% @movies.each do |movie| %>
       <div class="movie">
-        <h3><%= movie.title %></h3>
+        <h3><%= link_to movie.title, movie_path(movie) %></h3>
         <div>Rating: <%= movie.rating %></div>
         <div>Profit: <%= total_gross(movie) %></div>
         <p><%= description(movie) %></p>
