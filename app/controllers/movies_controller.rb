@@ -26,6 +26,13 @@ class MoviesController < ApplicationController
     render :show
   end
 
+  def destroy
+    @movie = Movie.find(params[:id])
+    @movie.destroy
+    redirect_to movies_path
+  end
+  
+
   private 
     def movie_params
       params.require(:movie).permit(:title, :rating, :total_gross, :description, :released_on)
